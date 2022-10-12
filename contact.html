@@ -1,0 +1,358 @@
+<!--
+    Exercise 1: Link the Bootstrap using the starter code.
+    Exercise 2: Create a navigation header with logo and site title.
+    Exercise 3: Add menu items in the navigation header.
+    Exercise 4: Fix the alignment of the navigation items.
+
+    Bonus: Add a footer at the bottom of the page.
+
+    Homework 1: Add the content in the home page.
+    Homework 2: Create a contact page.
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="static/avatars/favicon.ico">
+
+    
+      <link rel="icon" type="image/x-icon" href="static/avatars/mechanical4.png">
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <title>Contact us!</title>
+
+    <link rel="stylesheet" href="static/style.css">
+
+    
+    
+    
+  </head>
+  <body class="body">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/h23_css_framework_11/static/style.css">
+ <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+    
+    <div class="page-wrapper">
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top" style="background-color: black;">
+  <!-- Navbar content -->    
+      <div class="container-sm">
+        
+
+        <a class="navbar-brand" href="/index.html" id="mechMelt"><img id="img" src="static/avatars/mechanical4.png" class="img-fluid" >
+Mechanical Meltdown</a>
+        
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"><span class="navbar-toggler-icon"></span></button>
+        
+        <div id="navbar-items" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link hover" id="orange" href="/index.html">Home</a>
+
+              </li>
+            
+                      <li class="nav-item">
+            <a class="nav-link hover" href="/portfolio.html">Portfolio</a>
+              </li>
+                               <li class="nav-item">
+            <a class="nav-link hover" href="/about-us.html">What is FIRST?</a>
+              </li>  
+            
+              
+            
+            
+            
+                      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Socials
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZEZh0LnvLn8Ii-e8BvjOuw" target="_blank">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/FTC12833/" target="_blank">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/mechanicalmeltdown12833/" target="_blank">Instagram</a></li>
+            
+  
+
+            
+
+          </ul>
+        </li>
+                      
+                      <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+       
+            
+    <li class="nav-item"> <button class="start-btn icon img-fluid" id="start-btn"><img src="static/avatars/microphone.png" id="start-img"></button> 
+  <button class="listen-btn icon img-fluid"><img src="static/avatars/microphone.png" id="listen-img"></button>        </li>   
+            
+            
+          </ul>
+        
+        </div>          
+      </div>
+   
+      
+
+      </nav>
+          
+
+<div class="container-md" id="contact-page">
+  
+  <div class="row justify-content-center text-center">
+   
+    <h1 id="msg-header" class="title"> Message the Team</h1> 
+    
+    
+    <h5 class="contact">If you are interested in messaging us with questions, please feel free! All we ask is please do not spam and fill out all of the fields. </h5>
+  </div>
+  
+  
+  
+  <div class="row justify-content-center">
+    <p></p>
+    <div class="col-sm-5">
+      <form action="https://formsubmit.co/nerf_mania@yahoo.com" method="POST">
+        <div class="mb-3">
+          <label for="nameInput" class="title">Name</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Billy Bob Joe" name="Name">
+        </div>
+
+        <div class="mb-3">
+          <label for="emailInput" class="title">Email</label>
+          <input type="text" class="form-control" id="emailInput" placeholder="abc@xyz.com" name="Email">
+        </div>
+        
+        
+        <div class="mb-3">
+          <label for="messageInput" class="title">Your message</label>
+          <textarea id="messageInput" class="form-control" placeholder="Enter message here" name="Message"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <button type="submit" class="btn" id="msg-btn">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-sm-3" id="contact-graphic">
+      <img src="static/avatars/contact_us.jpg" class="img-fluid" id="contact-photo">
+      <p></p>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    
+              <div class="container-fluid text-center align-items-center justify-content-center" id="footer">
+                
+                
+                
+                <a href="https://www.youtube.com/channel/UCZEZh0LnvLn8Ii-e8BvjOuw"><img src="static/avatars/youtube-icon.png" class="icon img-fluid" id="youtube" target="_blank"></a>
+    
+                <a href="https://www.facebook.com/FTC12833/"><img src="static/avatars/facebook-icon.png" class="icon img-fluid" id="facebook" target="_blank"></a>    
+                
+              <a href="https://www.instagram.com/mechanicalmeltdown12833/"><img src="static/avatars/instagram.png" class="icon img-fluid" id="instagram" target="_blank"></a>                  
+                
+                
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      function showTalk(){
+  $(".listen-btn").show();
+  $(".start-btn").hide();
+  recognition.start()
+}
+  $(".start-btn").click(showTalk);
+      
+      
+      
+      
+    
+      function handleResult(event){
+    var result = event.results[0][0].transcript
+    console.log(result)
+    result = result.toLowerCase();
+    
+ if(result.includes("home")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/");
+           
+    }else if(result.includes("portfolio") || result.includes("change")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/portfolio");      
+      
+    }else if(result.includes("about us") || result.includes("us") || result.includes("about")|| result.includes("about first")|| result.includes("what is first")|| result.includes("first") || result.includes("what is") || result.includes("what first")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/about-us");     
+           
+    }else if(result.includes("contact") || result.includes("in the pipe five by five")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/contact");     
+      
+      
+    }else if(result.includes("remove background image") || result.includes("remove background photo") || result.includes("remove background")){
+      $('body').css('background-image','none');
+      
+      
+    }else{
+      alert("App could not understand user")
+            
+    }
+    
+    $(".start-btn").show();
+    $(".listen-btn").hide();
+    
+
+  
+      }//first if
+  
+$(".listen-btn").hide();
+
+ function speechStop(){
+   
+   recognition.stop()
+    console.log("Recognition engine has ended")
+   
+ }
+  
+     
+
+$( "#start-img" ).click(iffunc);
+      
+      
+      function iffunc(){
+          if(typeof webkitSpeechRecognition == "undefined"){
+    alert("ALERT: Your browser does not support this site's speech to page function. If you would like to use it, please try another browser.")
+          }
+ 
+               
+      }
+    
+
+
+    
+  
+      
+      
+      
+      
+      
+
+ 
+
+
+var recognition = new webkitSpeechRecognition();
+  
+  recognition.continuous = false;
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+  
+  recognition.onresult = handleResult;
+  recognition.onspeechend = speechStop;
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+  </body>
+</html>

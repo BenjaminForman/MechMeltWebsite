@@ -1,0 +1,486 @@
+<!--
+    Exercise 1: Link the Bootstrap using the starter code.
+    Exercise 2: Create a navigation header with logo and site title.
+    Exercise 3: Add menu items in the navigation header.
+    Exercise 4: Fix the alignment of the navigation items.
+
+    Bonus: Add a footer at the bottom of the page.
+
+    Homework 1: Add the content in the home page.
+    Homework 2: Create a contact page.
+-->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="static/avatars/favicon.ico">
+
+    
+      <link rel="icon" type="image/x-icon" href="static/avatars/mechanical4.png">
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat:wght@300&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+    <title>Portfolio</title>
+
+    
+    <link rel="stylesheet" href="static/style.css">
+
+    
+    
+  </head>
+  <body class="body">
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/h23_css_framework_11/static/style.css">
+ <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+    
+    <div class="page-wrapper">
+    <nav class="navbar navbar-dark navbar-expand-lg sticky-top" style="background-color: black;">
+  <!-- Navbar content -->    
+      <div class="container-sm">
+        
+
+        <a class="navbar-brand" href="/index.html" id="mechMelt"><img id="img" src="static/avatars/mechanical4.png" class="img-fluid" >
+Mechanical Meltdown</a>
+        
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"><span class="navbar-toggler-icon"></span></button>
+        
+        <div id="navbar-items" class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link hover" id="orange" href="/index.html">Home</a>
+
+              </li>
+            
+                      <li class="nav-item">
+            <a class="nav-link hover" href="/portfolio.html">Portfolio</a>
+              </li>
+                               <li class="nav-item">
+            <a class="nav-link hover" href="/about-us.html">What is FIRST?</a>
+              </li>  
+            
+              
+            
+            
+            
+                      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Socials
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCZEZh0LnvLn8Ii-e8BvjOuw" target="_blank">Youtube</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/FTC12833/" target="_blank">Facebook</a></li>
+            <li><a class="dropdown-item" href="https://www.instagram.com/mechanicalmeltdown12833/" target="_blank">Instagram</a></li>
+            
+  
+
+            
+
+          </ul>
+        </li>
+                      
+                      <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+              </li>
+       
+            
+    <li class="nav-item"> <button class="start-btn icon img-fluid" id="start-btn"><img src="static/avatars/microphone.png" id="start-img"></button> 
+  <button class="listen-btn icon img-fluid"><img src="static/avatars/microphone.png" id="listen-img"></button>        </li>   
+            
+            
+          </ul>
+        
+        </div>          
+      </div>
+   
+      
+
+      </nav>
+          
+
+          <h1 id="msg-header" class="title"> Portfolio</h1> 
+
+    <div class="content container-xxl">
+
+      
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" id="rows" data-masonry='{"percentPosition": true,  "itemSelector": ".col" }' >
+        
+        
+        
+        <div class="col">
+          <div class="card">
+            <img src="static/avatars/portfolio-1.jpg" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title">NY State Record!</h3>
+              <p class="card-text">
+               In the Freight Frenzy game season (2021-2022), our team, along with team 13357 IR Lightning, got the NY State Record of 280 points! Our team also achieved the 2nd and 5th place scores of 278 and 261, respectively.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="static/avatars/portfolio-2.jpg" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title">Sizzlin' Summer of Prizes</h3>
+
+              <p class="card-text">
+               This summer, our team put together a raffle fundraiser consisting of multiple prizes given out each day in the month of July. Participants could win many different prizes including museum passes, sports game tickets, ice cream and restaurant gift cards, and much more!
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="static/avatars/portfolio-3.jpg" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title">Helping Team 17222 Prota</h3>
+              <p class="card-text">
+   Last season, we mentored FTC team PROTA. It was a great learning experience for both teams as we were able to guide them to figure out what they needed to do to create an awesome robot. We supported them at a competition in Albany, NY, where they did fantastically and got to the finals!
+              </p>
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="static/avatars/portfolio-4.png" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title">Rank #1 in NY</h3>
+              <p class="card-text">
+           Our team was ranked #1 in NY State last season. We received the Inspire Award, which is the highest award a team can get, meaning they have completely embodied what FIRST stands for. We were also able to get the top score in the state of an impressive 280 points!
+              </p>
+
+            </div>
+          </div>
+        </div>        <div class="col">
+          <div class="card">
+            <img src="static/avatars/portfolio-5.jpg" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title">Game Testing</h3>
+              <p class="card-text">
+   We did extensive testing for all the game elements to give us a better idea of how they work and what our robot would need to do. In doing this, we can understand the game and game terms better, making it easier for us when it comes time for tournaments.
+              </p>
+
+            </div>
+          </div>
+        </div>        
+        
+        
+        <div class="col">
+          <div class="card">
+            <img src="static/avatars/can_crusher.jpg" class="img-fluid img-col card-img-top" />
+            <div class="card-body">
+              <h3 class="card-text title" id="title">Can Crusher</h3>
+              <p class="card-text" id="content">
+     The team made a robot that can traverse many obstacles that other robots cannot and picks up cans to deposit them in the bucket on it. We bring it with us to many fundraising events to show people and get them interested in robotics.
+              </p>
+
+            </div>
+          </div>
+        </div> 
+        
+        
+        
+        <p>     </p>    
+        
+        
+        
+        
+        
+      </div>
+    </div>
+
+
+
+          <!--modal body-->
+
+
+
+
+
+<!-- Masonry layout-->
+    <script>
+        var msnry = new Masonry('.row', {
+            itemSelector: '.col',
+            percentPosition: true
+        });
+      
+        setTimeout(function () {
+            msnry.layout();
+        }, 100);
+
+        setTimeout(function () {
+            msnry.layout();
+        }, 300);
+
+        setTimeout(function () {
+            msnry.layout();
+        }, 1000);
+
+        setTimeout(function () {
+            msnry.layout();
+        }, 5000);      
+      
+      var variable = "value";
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </script>
+
+
+<script>
+
+        var $grid = document.querySelector('.row');
+        var msnry = new Masonry($grid, {
+            itemSelector: '.col',
+            percentPosition: true
+        });
+        var $images = $grid.querySelectorAll('.card img');
+        // $images.forEach(function (el) {
+        //     el.addEventListener('load', function () {
+        //         console.log("Image is loaded: " + el.getAttribute("src"));
+        //         msnry.layout();
+        //     });
+        // });
+
+        Promise.all(
+            Array.from($images).filter(img => !img.complete)
+                .map(img => new Promise(resolve => { 
+                    img.addEventListener('load', resolve); 
+                    img.addEventListener('error', resolve);
+                })
+                )
+        ).then(
+            () => {
+                console.log('images finished loading');
+                msnry.layout();
+            }
+        );
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+    
+              <div class="container-fluid text-center align-items-center justify-content-center" id="footer">
+                
+                
+                
+                <a href="https://www.youtube.com/channel/UCZEZh0LnvLn8Ii-e8BvjOuw"><img src="static/avatars/youtube-icon.png" class="icon img-fluid" id="youtube" target="_blank"></a>
+    
+                <a href="https://www.facebook.com/FTC12833/"><img src="static/avatars/facebook-icon.png" class="icon img-fluid" id="facebook" target="_blank"></a>    
+                
+              <a href="https://www.instagram.com/mechanicalmeltdown12833/"><img src="static/avatars/instagram.png" class="icon img-fluid" id="instagram" target="_blank"></a>                  
+                
+                
+      </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      function showTalk(){
+  $(".listen-btn").show();
+  $(".start-btn").hide();
+  recognition.start()
+}
+  $(".start-btn").click(showTalk);
+      
+      
+      
+      
+    
+      function handleResult(event){
+    var result = event.results[0][0].transcript
+    console.log(result)
+    result = result.toLowerCase();
+    
+ if(result.includes("home")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/");
+           
+    }else if(result.includes("portfolio") || result.includes("change")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/portfolio");      
+      
+    }else if(result.includes("about us") || result.includes("us") || result.includes("about")|| result.includes("about first")|| result.includes("what is first")|| result.includes("first") || result.includes("what is") || result.includes("what first")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/about-us");     
+           
+    }else if(result.includes("contact") || result.includes("in the pipe five by five")){
+      window.location.assign("https://benjaminf2.flask.cwhq-apps.com/h23_css_framework_11/contact");     
+      
+      
+    }else if(result.includes("remove background image") || result.includes("remove background photo") || result.includes("remove background")){
+      $('body').css('background-image','none');
+      
+      
+    }else{
+      alert("App could not understand user")
+            
+    }
+    
+    $(".start-btn").show();
+    $(".listen-btn").hide();
+    
+
+  
+      }//first if
+  
+$(".listen-btn").hide();
+
+ function speechStop(){
+   
+   recognition.stop()
+    console.log("Recognition engine has ended")
+   
+ }
+  
+     
+
+$( "#start-img" ).click(iffunc);
+      
+      
+      function iffunc(){
+          if(typeof webkitSpeechRecognition == "undefined"){
+    alert("ALERT: Your browser does not support this site's speech to page function. If you would like to use it, please try another browser.")
+          }
+ 
+               
+      }
+    
+
+
+    
+  
+      
+      
+      
+      
+      
+
+ 
+
+
+var recognition = new webkitSpeechRecognition();
+  
+  recognition.continuous = false;
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+  
+  recognition.onresult = handleResult;
+  recognition.onspeechend = speechStop;
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+  </body>
+</html>

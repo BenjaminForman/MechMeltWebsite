@@ -1,0 +1,351 @@
+body {
+    background-color: #313332;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  
+  
+  .navbar .navbar-brand, .navbar #mechMelt{
+    color: #ff5a00;
+  }
+  
+  
+  .navbar-dark .navbar-nav .nav-link {
+    color: #ff5a00;
+    
+    
+  }
+  
+  #img{
+    width: 150px;
+  }
+  
+  #navbar-items {
+    justify-content: flex-end;
+  }
+  
+  #footer{
+    height: 80px;
+    background-color: black;
+    
+  }
+  .page-wrapper{
+    min-height: 100vh;
+  }
+  
+  #meetTheTeam{
+    margin-top:50px;
+    width: 400px;
+  }
+  
+  
+  h1, p, h2, h3, h5, h4, h6{
+    color: white;
+  }
+  
+  #msg-btn{
+    background-color: #ff5a00;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #contact-photo{
+    height: 350px;
+    
+  }
+  
+  #msg-header{
+    margin-top: 50px;;
+  }
+  
+  .icon{
+    margin: auto;
+    height:50px;
+    margin-top: 15px;
+  }
+  
+  .card-text{
+    color: white;
+    
+    
+  }
+  
+  
+  .card{
+    background-color: black;
+    margin-bottom:10px;;
+    margin-top:25px;
+    
+  }
+  
+  .title{
+    color: #ff5a00;
+    
+  }
+  
+  label{
+    font-size: 20px;
+    
+  }
+  
+  
+  
+  #product-1, #product-2, #product-3, #product-4, #product-5{
+    height:400px;
+    background-image: url("avatars/meet_the_team.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    
+  }
+  
+  #product-2{
+    background-image: url("avatars/meet_the_team15.jpg");
+   
+  }
+  
+  #product-3{
+    background-image: url("avatars/meet_the_team17.png");
+   
+  }
+  
+  #product-4{
+    background-image: url("avatars/meet_the_team13.jpg");
+   
+  }
+  
+  #product-5{
+    background-image: url("avatars/meet_the_team16.jpg");
+   
+  }
+  
+  .spacer-top{
+    margin-top: 30px;
+    
+    
+  }
+  
+  .spacer-bottom{
+    margin-bottom: 30px;
+  }
+  
+  #youtube{
+    margin-right:10px;
+  }
+  
+  #facebook{
+    margin-right:10px;
+  }
+  
+  
+  .about-us{
+   width:450px; 
+   
+  }
+  
+  #cover{
+    height: 500px;
+    background-image: url("avatars/first10.png");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: 50% 30%;
+    background-size: 80% auto;
+    background-color:#ff5a00;
+  }
+  
+  #first{
+    width:250px;
+    
+  }
+  
+  
+  
+  
+  img{
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  }
+  
+  
+  .col{
+    align-items: stretch; 
+    overflow: hidden;
+  }
+  
+  
+  .img-col{
+  }
+  
+  #drop{
+    background-color: black;
+    color:white;
+  }
+  
+  
+  .contact{
+    width:650px;
+  }
+  
+  #design-process{
+    margin-left:10px;
+    
+  }
+  
+  .left{
+    text-align: left;
+    max-width: 75%;
+    margin: 20px auto 20px auto;
+  }
+  
+  
+  #meet_the_team{
+    width: 50%;
+    
+  }
+  
+  .card{
+    margin-bottom: 10px;
+  }
+  
+  .card img{
+    object-fit:cover;
+    object-position: center top;
+    width: 100%;
+  }
+  
+  
+  #sponsors{
+    
+    width:300px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .start-btn{
+    border:none;
+    background-color: transparent;
+    margin:auto;
+    display:block;
+    cursor:pointer;
+    border-radius:50%;
+  }
+  
+  
+  
+  .start-btn:hover{
+  cursor: pointer;
+    
+    
+    
+  }
+  
+  
+  
+  #start-img{
+    height: 30px;
+    text-align:center;
+  margin-bottom:10px;
+  
+  }
+  
+  
+  
+  
+  
+  .listen-btn{
+    border:none;
+    background-color: black;
+    margin:auto;
+    display:block;
+    cursor:pointer;
+    border-radius:50%;
+    
+  }
+  
+  
+  
+  .listen-btn:hover{
+  cursor: wait;
+    border-radius:60%;
+    border-style: solid orange;
+  }
+  
+  #listen-img{
+    height: 30px;
+    text-align:center;
+  margin-bottom:10px;}
+  
+  
+  .hover:hover{
+    color:red;
+  }
+  
+  
+  p{
+    max-width: 700px;
+    text-align: left;
+  }
+  
+  /*.active, .navContentActual:hover {
+    background-color: #666;
+    color: red;
+  }*/
+  
+  
+  h1{
+    text-align:center;
+  }
+  
+  
+  #rows{
+    width: 75%;
+    margin: auto;
+  }
+  
+  
+  .infoCards{
+    height: 92%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
